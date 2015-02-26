@@ -17,7 +17,7 @@ import com.jcabi.github.Coordinates;
 public class Demo1 {
 
     public static String readAllBytes(String filename) throws Exception {
-      return new String(Files.readAllBytes(Paths.get(filename)));
+	return new String(Files.readAllBytes(Paths.get(filename))).trim();
     }
     
     public static void main(String[] args) throws Exception {
